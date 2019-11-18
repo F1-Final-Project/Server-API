@@ -24,6 +24,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.11",
     "nodemon": "^1.19.4",
-    "db-schemas": "git+https://github.com/imovie23/DB_Services"
+    "db-worker": "git+https://github.com/F1-Final-Project/DB_Services"
   }
 }
