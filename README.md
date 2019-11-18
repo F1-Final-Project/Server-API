@@ -78,7 +78,7 @@ Example response:
 Returns auth token.
 
 |Param|Type|
-|--|--|--|
+|--|--|
 |email|`string`|
 |password|`string`|
 
