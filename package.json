@@ -19,11 +19,12 @@
   "homepage": "https://github.com/imovie23/Server-API#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "db-worker": "git+https://github.com/F1-Final-Project/DB_Services",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.11",
     "nodemon": "^1.19.4",
-    "db-worker": "git+https://github.com/F1-Final-Project/DB_Services"
+    "winston": "^3.2.1"
   }
 }
