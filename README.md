@@ -1,4 +1,8 @@
 # Server API
+
+## [Heroku Link](https://f1-server-api.herokuapp.com/)
+
+## Documentation
 * [User API](#user-api)
 * [Auth API](#auth-api)
 * [Ingredient API](#ingredient-api)
@@ -7,6 +11,7 @@
 * [Invoice API](#invoice-api)
 * [Order API](#order-api)
 * [News API](#news-api)
+* [Reserved API](#reserved-api)
 
 ## User API
 ### GET /users
@@ -783,6 +788,102 @@ Example response:
 ```
 ### DELETE /news/:id
 Delete a News instance by id.
+
+Example response:
+```json
+{
+    "message": "Successfully deleted!"
+}
+```
+
+
+[]: https://f1-server-api.herokuapp.com/
+
+## Reserved API
+### GET /reserved
+Returns all Reserved instance.
+
+Example response:
+```json
+[
+    {
+        "table": 2,
+        "client": "Test",
+        "_id": "5dd31f81d55c9a23c484041c",
+        "date": "2019-11-29T22:00:00.000Z",
+        "phone": "0676767676",
+        "__v": 0
+    }
+]
+```
+
+### POST /reserved
+Adds to Reserved instance in a database.
+
+|Param|Type|
+|--|--|
+|date|`string`|
+|table|`number`|
+|client|`string`|
+|phone|`string`|
+
+Example request:
+```json
+{
+    "table": 2,
+    "client": "Test",
+    "date": "2019-11-29T22:00:00.000Z",
+    "phone": "0676767676"
+}
+```
+Example response:
+```json
+{
+    "message": "Successfully created!"
+}
+```
+
+### GET /reserved/:id
+Returns a Reserved instance by id.
+
+Example response:
+```json
+{
+    "table": 2,
+    "client": "Test",
+    "_id": "5dd31f81d55c9a23c484041c",
+    "date": "2019-11-29T22:00:00.000Z",
+    "phone": "0676767676",
+    "__v": 0
+}
+```
+### PUT /reserved/:id
+Updates to Reserved instance in a database.
+
+|Param|Type|
+|--|--|
+|date|`string`|
+|table|`number`|
+|client|`string`|
+|phone|`string`|
+
+Example request:
+```json
+{
+    "table": 2,
+    "client": "Test",
+    "date": "2019-11-29T22:00:00.000Z",
+    "phone": "0676767676"
+}
+```
+Example response:
+```json
+{
+    "message": "Successfully updated!"
+}
+```
+### DELETE /reserved/:id
+Delete a Reserved instance by id.
 
 Example response:
 ```json
