@@ -139,7 +139,12 @@ Example request:
 Example response:
 ```json
 {
-    "message": "Successfully created!"
+    "price": 100,
+    "_id": "5dd098570cdb777077a0bec3",
+    "title": "Японский рис",
+    "restInStock": 500,
+    "description": "Круглозерный японский рис, более твердый, чем другие круглозерные сорта.",
+    "__v": 0
 }
 ```
 
@@ -795,9 +800,6 @@ Example response:
     "message": "Successfully deleted!"
 }
 ```
-
-
-[]: https://f1-server-api.herokuapp.com/
 
 ## Reserved API
 ### GET /reserved
