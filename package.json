@@ -22,9 +22,11 @@
     "db-worker": "git+https://github.com/F1-Final-Project/DB_Services",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "firebase-admin": "^8.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.11",
     "nodemon": "^1.19.4",
+    "web-push": "^3.4.2",
     "winston": "^3.2.1"
   }
 }
