@@ -1,0 +1,1 @@
+const PERMISSION = require('../constants/permission');const accessAdmin = function(req, res, next) {    if (req.permission === PERMISSION.ADMIN) {        next();    } else {        res.status(403).send('Access denied!');    }};module.exports = accessAdmin;
