@@ -63,7 +63,7 @@ function buildPlatformMessage(token, title, body) {
             'TTL': '0'
         },
         'notification': {
-            'icon': 'https://img.icons8.com/color/96/e74c3c/ireland.png'
+            'icon': 'https://pinimg.icu/wall/0x0/alara-iscan-pinterest-C07f12bfb3b2b0104fae637771acdd5b7.jpg?t=5df14898e4828'
         },
         'fcm_options': {
             'link': 'http://localhost:3000'
