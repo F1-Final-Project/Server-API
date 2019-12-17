@@ -1,0 +1,1 @@
+module.exports = {    ADMIN: 'admin',    WAITER: 'waiter',    COOK: 'cook'};
