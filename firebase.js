@@ -101,7 +101,6 @@ async function unsubscribeAppInstanceFromTopic(token, topic) {
     }
 }
 
-
 module.exports = {
     buildPlatformMessage,
     storeAppInstanceToken,
