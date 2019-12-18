@@ -16,7 +16,6 @@ router.route('/')
     .post(withAuth, accessAdmin, async function (req, res) {
         try {
             const newDish = await DishService.createDish(req.body);
-            console.log("newDish --> ", newDish);
             await res.status(201).json(newDish);
         } catch (err) {
             return res.status(500).send(err);
