@@ -1,1 +1,1 @@
-language: node_jsdist: trustycache:  directories:    - ./node_modulesbefore_script:  - npm install --prefix ./script:  - npm run test
+dist: trustylanguage: node_jsnode_js:  - "10"cache:  directories:    - ./node_modulesbefore_script:  - npm i -g npm  - npm install --prefix ./script:  - npm run test
