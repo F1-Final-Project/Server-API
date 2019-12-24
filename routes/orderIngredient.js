@@ -38,7 +38,7 @@ router.route('/:orderIngredientId')
     })
     .delete(async function (req, res) {
         try {
-            OrderIngredientService.deleteOrderIngredient(req.params.orderIngredientId);
+            await OrderIngredientService.deleteOrderIngredient(req.params.orderIngredientId);
             await res.status(200).json({message: 'Successfully deleted!', id: req.params.orderIngredientId} );
         } catch (err) {
             return res.status(500).send(err);
