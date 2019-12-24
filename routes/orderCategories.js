@@ -9,7 +9,8 @@ router.route('/')
         } catch (err) {
             return res.status(500).send(err);
         }
-    }).post(async function (req, res) {
+    })
+    .post(async function (req, res) {
     try {
         const newOrderCategories = await OrderCategoriesService.createOrderCategories(req.body);
         await res.status(201).json(newOrderCategories);
