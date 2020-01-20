@@ -63,7 +63,7 @@ function buildPlatformMessage(token, title, body) {
             'TTL': '0'
         },
         'notification': {
-            'icon': 'https://pinimg.icu/wall/0x0/alara-iscan-pinterest-C07f12bfb3b2b0104fae637771acdd5b7.jpg?t=5df14898e4828'
+            'icon': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
         },
         'fcm_options': {
             'link': 'http://localhost:3000'
